@@ -9,11 +9,11 @@ import Loader from './components/utility/loader';
 const Dashboard = lazy(() => import('./containers/Dashboard/Dashboard'));
 
 const publicRoutes = [
-  // {
-  //   path: PUBLIC_ROUTE.LANDING,
-  //   exact: true,
-  //   component: lazy(() => import('./containers/Pages/SignIn/SignIn')),
-  // },
+  {
+    path: PUBLIC_ROUTE.LANDING,
+    exact: true,
+    component: lazy(() => import('./containers/Home/home')),
+  },
   {
     path: PUBLIC_ROUTE.PAGE_404,
     component: lazy(() => import('./containers/Pages/404/404')),
