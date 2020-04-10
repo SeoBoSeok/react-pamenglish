@@ -6,7 +6,7 @@ import WithDirection from '@pam/lib/helpers/rtl';
 const SidebarWrapper = styled.div`
   .isomorphicSidebar {
     z-index: 1000;
-    background: ${palette('secondary', 0)};
+    background: ${palette('color', 14)};
     width: 280px;
     flex: 0 0 280px;
 
@@ -33,7 +33,8 @@ const SidebarWrapper = styled.div`
       align-item: center;
       justify-content: center;
       height: 70px;
-      background: rgba(0, 0, 0, 0.3);
+      backgrond-color: #fff;
+      // background: rgba(0, 0, 0, 0.3);
       margin: 0;
       padding: 0 10px;
       text-align: center;
@@ -48,16 +49,19 @@ const SidebarWrapper = styled.div`
           letter-spacing: 3px;
           text-transform: uppercase;
           margin-left: 20px;
-          color: ${palette('grayscale', 6)};
+          color: inherit;
           display: block;
           text-decoration: none;
+        }
+        i {
+          color: red;
         }
       }
 
       .isoLeft {
         display: flex;
         align-items: center;
-  
+
         @media only screen and (max-width: 767px) {
           margin: ${props =>
             props['data-rtl'] === 'rtl' ? '0 0 0 20px' : '0 20px 0 0'};
@@ -75,6 +79,7 @@ const SidebarWrapper = styled.div`
           border: 0;
           outline: 0;
           position: relative;
+          color: ${palette('grayscale', 1)}
           cursor: pointer;
   
           &:before {
@@ -139,7 +144,7 @@ const SidebarWrapper = styled.div`
     }
 
     .isoDashboardMenu {
-      padding-top: 35px;
+      // padding-top: 35px;
       padding-bottom: 35px;
       background: transparent;
 
@@ -187,32 +192,27 @@ const SidebarWrapper = styled.div`
       }
 
       .ant-menu-item-selected {
-        background-color: rgba(0, 0, 0, 0.4) !important;
-        .anticon {
-          color: #fff;
-        }
-
+        background-color: rgba(0, 0, 0, 0.15) !important;
         i {
-          color: #fff;
+          color: red;
         }
-
         .nav-text {
-          color: #fff;
+          color: inherit;
         }
       }
 
       > li {
         &:hover {
-          i,
-          .nav-text {
-            color: #ffffff;
+          background-color: rgba(0, 0, 0, 0.1);
+          i {
+            color: red;
           }
         }
       }
     }
 
     .ant-menu-dark .ant-menu-inline.ant-menu-sub {
-      background: ${palette('secondary', 5)};
+      background: rgba(0, 0, 0, 0.15);
     }
 
     .ant-menu-submenu-inline,
@@ -261,7 +261,7 @@ const SidebarWrapper = styled.div`
           .ant-menu-submenu-arrow {
             &:before,
             &:after {
-              color: #ffffff;
+              color: inherit;
             }
           }
         }

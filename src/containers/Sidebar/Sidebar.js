@@ -90,7 +90,7 @@ export default function Sidebar() {
     backgroundColor: customizedTheme.backgroundColor,
   };
   const submenuStyle = {
-    backgroundColor: 'rgba(0,0,0,0.3)',
+    // backgroundColor: 'rgba(0,0,0,0.3)',
     color: customizedTheme.textColor,
   };
   const submenuColor = {
@@ -118,6 +118,7 @@ export default function Sidebar() {
             openKeys={isCollapsed ? [] : openKeys}
             selectedKeys={current}
             onOpenChange={onOpenChange}
+            inlineIndent={32}
           >
             {options.map(singleOption => (
               <SidebarMenu
@@ -128,7 +129,7 @@ export default function Sidebar() {
               />
             ))}
             {/* Demo Menu */}
-            <SubMenu
+            {/* <SubMenu
               key="sub1"
               title={
                 <span className="isoMenuHolder" style={submenuColor}>
@@ -161,7 +162,7 @@ export default function Sidebar() {
                   <IntlMessages id="sidebar.option4" />
                 </Menu.Item>
               </MenuItemGroup>
-            </SubMenu>
+            </SubMenu> */}
           </Menu>
         </Scrollbars>
       </Sider>

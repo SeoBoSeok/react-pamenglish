@@ -2,10 +2,12 @@ import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { Layout, Input, Button } from 'antd';
 import { SearchOutlined } from '@ant-design/icons';
+import { Link } from 'react-router-dom';
+
 import appActions from '@pam/redux/app/actions';
 import TopbarNotification from './TopbarNotification';
 import TopbarMessage from './TopbarMessage';
-// import TopbarSearch from './TopbarSearch';
+import TopbarSearch from './TopbarSearch';
 import TopbarUser from './TopbarUser';
 // import TopbarAddtoCart from './TopbarAddToCart';
 import TopbarWrapper from './Topbar.styles';
@@ -37,17 +39,17 @@ export default function Topbar() {
           isCollapsed ? 'isomorphicTopbar collapsed' : 'isomorphicTopbar'
         }
       >
-        {/* <div className="isoLeft">
-          <button
-            className={
-              isCollapsed ? 'triggerBtn menuCollapsed' : 'triggerBtn menuOpen'
-            }
-            style={{ color: customizedTheme.textColor }}
-            onClick={handleToggle}
-          />
-        </div> */}
         <div className="isoLeft">
-          
+          <button
+              className={
+                isCollapsed ? 'triggerBtn menuCollapsed' : 'triggerBtn menuOpen'
+              }
+              style={{ color: customizedTheme.textColor }}
+              onClick={handleToggle}
+            />
+            <h3>
+              <Link to="/dashboard"><i className={`ion-social-youtube`}/>{` `}{'YOUTUBE'}</Link>
+            </h3>
         </div>
         <div className="isoCenter">
           <Search placeholder="input search text" style={{ width: 420 }} onSearch={value => console.log(value)} enterButton={(<Button type="primary" icon={<SearchOutlined />}>
@@ -55,7 +57,7 @@ export default function Topbar() {
         </div>
         <ul className="isoRight">
           <li className="isoSearch">
-            {/* <TopbarSearch /> */}
+            <TopbarSearch />
           </li>
 
           <li

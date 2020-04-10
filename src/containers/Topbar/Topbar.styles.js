@@ -14,8 +14,8 @@ const TopbarWrapper = styled.div`
     background-color: #ffffff;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     padding: ${props =>
-      props['data-rtl'] === 'rtl' ? '0 265px 0 31px' : '0 31px 0 265px'};
-    z-index: 1000;
+      props['data-rtl'] === 'rtl' ? '0 265px 0 31px' : '0 31px 0 28px'};
+    z-index: 1001;
     ${transition()};
 
     @media only screen and (max-width: 767px) {
@@ -27,7 +27,7 @@ const TopbarWrapper = styled.div`
 
     &.collapsed {
       padding: ${props =>
-        props['data-rtl'] === 'rtl' ? '0 109px 0 31px' : '0 31px 0 109px'};
+        props['data-rtl'] === 'rtl' ? '0 109px 0 31px' : '0 31px 0 28px'};
       @media only screen and (max-width: 767px) {
         padding: ${props =>
           props['data-rtl'] === 'rtl'
@@ -39,6 +39,28 @@ const TopbarWrapper = styled.div`
     .isoLeft {
       display: flex;
       align-items: center;
+
+      h3 {
+        a {
+          font-size: 21px;
+          font-weight: 500;
+          line-height: 70px;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          margin-left: 20px;
+          // color: ${palette('grayscale', 1)};
+          color: inherit;
+          display: block;
+          text-decoration: none;
+        }
+        @media only screen and (max-width: 850px) {
+          display: none;
+        }
+      }
+
+      i {
+        color: red;
+      }
 
       @media only screen and (max-width: 767px) {
         margin: ${props =>
@@ -73,6 +95,15 @@ const TopbarWrapper = styled.div`
     .isoCenter {
       display: flex;
       align-items: center;
+      .ant-input-search-button {
+        background-color: ${palette('grayscale', 1)};
+        outline: none;
+        border-color: ${palette('grayscale', 1)};
+        width: 50px;
+      }
+      @media only screen and (max-width: 700px) {
+        display: none;
+      }
     }
 
     .isoRight {
@@ -127,6 +158,13 @@ const TopbarWrapper = styled.div`
             right: ${props =>
               props['data-rtl'] === 'rtl' ? '10px' : 'inherit'};
             ${borderRadius('50%')};
+          }
+        }
+
+        &.isoSearch {
+          display: none;
+          @media only screen and (max-width: 700px) {
+            display: block;
           }
         }
 
