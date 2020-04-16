@@ -9,6 +9,7 @@ import Following from './Following/Following';
 import Wrapper, { Banner, Navigation, ContentWrapper } from './Profile.styles';
 import { useSelector, useDispatch } from 'react-redux';
 import profileActions from '@pam/redux/profile/actions';
+import UploadVideo from './Upload/UploadVideo';
 
 const MyProfile = () => {
   const data = useSelector(state => state.profile.data);
@@ -20,7 +21,7 @@ const MyProfile = () => {
   );
 
   const [active, setActive] = useState('post');
-  const [visible, setVisible] = useState(false);
+  const [visible, setVisible] = useState(true);
 
   useEffect(() => {
     getProfile();
@@ -69,20 +70,20 @@ const MyProfile = () => {
                   className={active === 'post' ? 'active' : ''}
                   onClick={() => handleMenu('post')}
                 >
-                  <strong>{data.post.length}</strong> Posts
+                  <strong>{data.post.length}</strong> 업로드
                 </li>
                 <li
                   className={active === 'followers' ? 'active' : ''}
                   onClick={() => handleMenu('followers')}
                 >
-                  <strong>{data.followers.length}</strong> Followers
+                  <strong>{data.followers.length}</strong> 실시간 스트리밍
                 </li>
-                <li
+                {/* <li
                   className={active === 'following' ? 'active' : ''}
                   onClick={() => handleMenu('following')}
                 >
                   <strong>{data.following.length}</strong> Following
-                </li>
+                </li> */}
               </ul>
             </Container>
           </Navigation>
@@ -100,6 +101,7 @@ const MyProfile = () => {
                 onCancel={handleCancel}
                 footer={null}
               >
+                <UploadVideo />
                 {active === 'followers' && <Followers data={data.followers} />}
                 {active === 'following' && <Following data={data.following} />}
               </Modal>

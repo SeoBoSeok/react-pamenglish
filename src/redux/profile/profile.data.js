@@ -15,8 +15,8 @@ import post11 from '@pam/assets/images/posts/11.png';
 
 const profileData = {
   id: 1,
-  name: 'Samwell Martina',
-  username: '@samwell_martina',
+  name: '서보석',
+  username: 'ggy7bbo@gmail.com',
   avatar: userpic,
   profile_bg: profilebg,
   post: [

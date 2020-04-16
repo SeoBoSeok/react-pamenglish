@@ -272,8 +272,8 @@ export const DashboardContainer = styled.div`
     background: ${palette('secondary', 1)};
 
     &.isoContentMainLayout {
-      /* overflow: auto; */
-      overflow: hidden;
+      overflow: auto;
+      overflow-x: hidden;
       @media only screen and (min-width: 768px) and (max-width: 1220px) {
         width: calc(100% - 80px);
         flex-shrink: 0;

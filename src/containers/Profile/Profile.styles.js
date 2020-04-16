@@ -7,7 +7,7 @@ export const Banner = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 400px;
+  height: 200px;
   position: relative;
   &::after {
     content: '';
@@ -20,7 +20,7 @@ export const Banner = styled.div`
   }
 
   .container {
-    height: 400px;
+    height: 200px;
     position: relative;
     z-index: 1;
     .avatar-card {

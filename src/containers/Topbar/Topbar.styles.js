@@ -217,7 +217,9 @@ const TopbarWrapper = styled.div`
 
             img {
               height: 100%;
+              width: 40px;
               object-fit: cover;
+              border-radius: 50%;
             }
 
             .userActivity {
