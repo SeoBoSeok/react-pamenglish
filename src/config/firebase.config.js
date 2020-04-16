@@ -1,8 +1,10 @@
 export default {
-  apiKey: "your_firebase_api_key",
-  authDomain: "your_firebase_auth_domain",
-  databaseURL: "your_firebase_database_url",
-  projectId: "your_firebase_project_id",
-  storageBucket: "your_firebase_storage_bucket",
-  messagingSenderId: "your_firebase_messaging_sender_id"
+  apiKey: "AIzaSyDJV1fNZwbEbhdTyNT6LUfvBPESJfVHBPk",
+  authDomain: "fir-4ac4c.firebaseapp.com",
+  databaseURL: "https://fir-4ac4c.firebaseio.com",
+  projectId: "fir-4ac4c",
+  storageBucket: "fir-4ac4c.appspot.com",
+  messagingSenderId: "386369460624",
+  appId: "1:386369460624:web:5d6743d022e1649d40fb15",
+  measurementId: "G-P23F88GX95"
 };

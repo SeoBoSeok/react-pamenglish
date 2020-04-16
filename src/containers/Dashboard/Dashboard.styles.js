@@ -272,8 +272,8 @@ export const DashboardContainer = styled.div`
     background: ${palette('secondary', 1)};
 
     &.isoContentMainLayout {
-      overflow: auto;
-      overflow-x: hidden;
+      /* overflow: auto; */
+      overflow: hidden;
       @media only screen and (min-width: 768px) and (max-width: 1220px) {
         width: calc(100% - 80px);
         flex-shrink: 0;
@@ -297,7 +297,7 @@ export const DashboardContainer = styled.div`
   .isomorphicLayout {
     width: calc(100% - 240px);
     flex-shrink: 0;
-    overflow-x: hidden !important;
+    /* overflow-x: hidden !important; */
 
     @media only screen and (max-width: 767px) {
       width: 100%;

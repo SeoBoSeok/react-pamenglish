@@ -79,7 +79,7 @@ const SidebarWrapper = styled.div`
           border: 0;
           outline: 0;
           position: relative;
-          color: ${palette('grayscale', 1)}
+          color: ${palette('grayscale', 1)};
           cursor: pointer;
   
           &:before {
@@ -92,7 +92,11 @@ const SidebarWrapper = styled.div`
           }
         }
       }
-
+    }
+    /* sidebar avatar */
+    .avatar-card {
+      display: flex;
+      justify-content: center;
     }
 
     &.ant-layout-sider-collapsed {
@@ -140,6 +144,10 @@ const SidebarWrapper = styled.div`
             }
           }
         }
+      }
+      .avatar-card .avatar {
+        width: 50px;
+        height: 50px;
       }
     }
 

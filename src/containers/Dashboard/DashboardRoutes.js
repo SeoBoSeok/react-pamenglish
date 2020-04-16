@@ -12,10 +12,10 @@ const routes = [
   //   path: 'inbox',
   //   component: lazy(() => import('@pam/containers/Mail/Mail')),
   // },
-  // {
-  //   path: 'my-profile',
-  //   component: lazy(() => import('@pam/containers/Profile/Profile')),
-  // },
+  {
+    path: 'my-profile',
+    component: lazy(() => import('@pam/containers/Profile/Profile')),
+  },
   // {
   //   path: 'quiz/:quizid',
   //   component: lazy(() => import('@pam/containers/Quiz/SingleQuiz')),

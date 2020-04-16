@@ -22,7 +22,7 @@ const TopbarWrapper = styled.div`
       padding: ${props =>
         props['data-rtl'] === 'rtl'
           ? '0px 260px 0px 15px !important'
-          : '0px 15px 0px 260px !important'};
+          : '0px 28px 0px 28px !important'};
     }
 
     &.collapsed {
@@ -32,7 +32,7 @@ const TopbarWrapper = styled.div`
         padding: ${props =>
           props['data-rtl'] === 'rtl'
             ? '0px 15px !important'
-            : '0px 15px !important'};
+            : '0px 28px 0px 28px !important'};
       }
     }
 
@@ -100,6 +100,10 @@ const TopbarWrapper = styled.div`
         outline: none;
         border-color: ${palette('grayscale', 1)};
         width: 50px;
+        span {
+          display: flex;
+          justify-content: center;
+        }
       }
       @media only screen and (max-width: 700px) {
         display: none;
@@ -247,7 +251,6 @@ const TopbarWrapper = styled.div`
           width: 220px;
           min-width: 160px;
           flex-shrink: 0;
-          .isoBorderRadius(5px);
           ${borderRadius('5px')};
           ${boxShadow('0 2px 10px rgba(0,0,0,0.2)')};
           ${transition()};

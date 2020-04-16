@@ -1,7 +1,7 @@
 export default {
-  siteName: 'ISOMORPHIC',
+  siteName: 'PAM ENGLISH',
   siteIcon: 'ion-flash',
-  footerText: `Isomorphic @ ${new Date().getFullYear()} Created by RedQ, Inc`,
+  footerText: `PAM ENGLISH @ ${new Date().getFullYear()} Created by PAM FOREST`,
   enableAnimatedRoute: false,
   apiUrl: 'http://yoursite.com/api/',
   google: {

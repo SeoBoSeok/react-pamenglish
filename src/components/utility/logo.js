@@ -35,7 +35,7 @@ export default ({ collapsed }) => {
           />
         </div>
         <h3>
-          <Link to="/dashboard"><i className={`ion-social-youtube`}/>{` `}{'YOUTUBE'}</Link>
+          <Link to="/"><i className={`ion-social-youtube`}/>{` `}{'YOUTUBE'}</Link>
         </h3>
         </>
       )}

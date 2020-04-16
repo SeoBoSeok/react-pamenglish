@@ -4,13 +4,13 @@ import { Layout } from 'antd';
 import options from './options';
 import Scrollbars from '@pam/components/utility/customScrollBar';
 import Menu from '@pam/components/uielements/menu';
-import IntlMessages from '@pam/components/utility/intlMessages';
+// import IntlMessages from '@pam/components/utility/intlMessages';
 import appActions from '@pam/redux/app/actions';
 import Logo from '@pam/components/utility/logo';
 import SidebarWrapper from './Sidebar.styles';
 import SidebarMenu from './SidebarMenu';
-const SubMenu = Menu.SubMenu;
-const MenuItemGroup = Menu.ItemGroup;
+// const SubMenu = Menu.SubMenu;
+// const MenuItemGroup = Menu.ItemGroup;
 const { Sider } = Layout;
 
 const {

@@ -77,7 +77,9 @@ const Routes = () => (
                 ))
               }
               {/* <PrivateRoute path="/dashboard"> */}
+              <Route path="/dashboard">
                 <Dashboard />
+              </Route>
               {/* </PrivateRoute> */}
             </Switch>
           </Router>

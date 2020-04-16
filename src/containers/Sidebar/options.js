@@ -1,72 +1,72 @@
 const options = [
-  {
-    key: 'mailbox',
-    label: 'sidebar.email',
-    leftIcon: 'ion-android-mail',
-  },
-  {
-    key: 'chat',
-    label: 'sidebar.chat',
-    leftIcon: 'ion-chatbubbles',
-  },
+  // {
+  //   key: 'mailbox',
+  //   label: 'sidebar.email',
+  //   leftIcon: 'ion-android-mail',
+  // },
+  // {
+  //   key: 'chat',
+  //   label: 'sidebar.chat',
+  //   leftIcon: 'ion-chatbubbles',
+  // },
   // {
   //   key: 'quiz',
   //   label: 'sidebar.quiz',
   //   leftIcon: 'ion-chatbubbles',
   // },
-  {
-    key: 'ecommerce',
-    label: 'sidebar.ecommerce',
-    leftIcon: 'ion-bag',
-    children: [
-      {
-        key: 'shop',
-        label: 'sidebar.shop',
-      },
-      {
-        key: 'cart',
-        label: 'sidebar.cart',
-      },
-      {
-        key: 'checkout',
-        label: 'sidebar.checkout',
-      },
-      {
-        key: 'card',
-        label: 'sidebar.cards',
-      },
-    ],
-  },
-  {
-    key: 'maps',
-    label: 'sidebar.maps',
-    leftIcon: 'ion-map',
-    children: [
-      {
-        key: 'googlemap',
-        label: 'sidebar.googleMap',
-      },
-      {
-        key: 'leafletmap',
-        label: 'sidebar.leafletMap',
-      },
-    ],
-  },
+  // {
+  //   key: 'ecommerce',
+  //   label: 'sidebar.ecommerce',
+  //   leftIcon: 'ion-bag',
+  //   children: [
+  //     {
+  //       key: 'shop',
+  //       label: 'sidebar.shop',
+  //     },
+  //     {
+  //       key: 'cart',
+  //       label: 'sidebar.cart',
+  //     },
+  //     {
+  //       key: 'checkout',
+  //       label: 'sidebar.checkout',
+  //     },
+  //     {
+  //       key: 'card',
+  //       label: 'sidebar.cards',
+  //     },
+  //   ],
+  // },
+  // {
+  //   key: 'maps',
+  //   label: 'sidebar.maps',
+  //   leftIcon: 'ion-map',
+  //   children: [
+  //     {
+  //       key: 'googlemap',
+  //       label: 'sidebar.googleMap',
+  //     },
+  //     {
+  //       key: 'leafletmap',
+  //       label: 'sidebar.leafletMap',
+  //     },
+  //   ],
+  // },
   {
     key: 'my-profile',
     label: 'sidebar.profile',
     leftIcon: 'ion-person',
   },
-  {
-    key: 'scrum-board',
-    label: 'sidebar.scrumboard',
-    leftIcon: 'ion-android-checkbox-outline',
-  },
-  {
-    key: 'invoice',
-    label: 'sidebar.invoice',
-    leftIcon: 'ion-clipboard',
-  },
+  // {
+  //   key: 'scrum-board',
+  //   label: 'sidebar.scrumboard',
+  //   leftIcon: 'ion-android-checkbox-outline',
+  // },
+  // {
+  //   key: 'invoice',
+  //   label: 'sidebar.invoice',
+  //   leftIcon: 'ion-clipboard',
+  // },
   {
     key: 'youtubeSearch',
     label: 'sidebar.youtubeSearch',
@@ -82,11 +82,11 @@ const options = [
     label: 'sidebar.notes',
     leftIcon: 'ion-ios-paper',
   },
-  {
-    key: 'todo',
-    label: 'sidebar.todos',
-    leftIcon: 'ion-android-checkbox-outline',
-  },
+  // {
+  //   key: 'todo',
+  //   label: 'sidebar.todos',
+  //   leftIcon: 'ion-android-checkbox-outline',
+  // },
   {
     key: 'firestorecrud',
     label: 'sidebar.firestorecrud',
@@ -113,29 +113,29 @@ const options = [
     label: 'sidebar.shuffle',
     leftIcon: 'ion-grid',
   },
-  {
-    key: 'charts',
-    label: 'sidebar.charts',
-    leftIcon: 'ion-arrow-graph-up-right',
-    children: [
-      {
-        key: 'googleChart',
-        label: 'sidebar.googleCharts',
-      },
-      {
-        key: 'reecharts',
-        label: 'sidebar.recharts',
-      },
-      {
-        key: 'reactChart2',
-        label: 'sidebar.reactChart2',
-      },
-      {
-        key: 'frappeChart',
-        label: 'sidebar.frappeChart',
-      },
-    ],
-  },
+  // {
+  //   key: 'charts',
+  //   label: 'sidebar.charts',
+  //   leftIcon: 'ion-arrow-graph-up-right',
+  //   children: [
+  //     {
+  //       key: 'googleChart',
+  //       label: 'sidebar.googleCharts',
+  //     },
+  //     {
+  //       key: 'reecharts',
+  //       label: 'sidebar.recharts',
+  //     },
+  //     {
+  //       key: 'reactChart2',
+  //       label: 'sidebar.reactChart2',
+  //     },
+  //     {
+  //       key: 'frappeChart',
+  //       label: 'sidebar.frappeChart',
+  //     },
+  //   ],
+  // },
   {
     key: 'Forms',
     label: 'sidebar.forms',
@@ -274,37 +274,37 @@ const options = [
       },
     ],
   },
-  {
-    key: 'feedback',
-    label: 'sidebar.feedback',
-    leftIcon: 'ion-thumbsup',
-    children: [
-      {
-        key: 'alert',
-        label: 'sidebar.alert',
-      },
-      {
-        key: 'modal',
-        label: 'sidebar.modal',
-      },
-      {
-        key: 'message',
-        label: 'sidebar.message',
-      },
-      {
-        key: 'notification',
-        label: 'sidebar.notification',
-      },
-      {
-        key: 'popConfirm',
-        label: 'sidebar.popConfirm',
-      },
-      {
-        key: 'spin',
-        label: 'sidebar.spin',
-      },
-    ],
-  },
+  // {
+  //   key: 'feedback',
+  //   label: 'sidebar.feedback',
+  //   leftIcon: 'ion-thumbsup',
+  //   children: [
+  //     {
+  //       key: 'alert',
+  //       label: 'sidebar.alert',
+  //     },
+  //     {
+  //       key: 'modal',
+  //       label: 'sidebar.modal',
+  //     },
+  //     {
+  //       key: 'message',
+  //       label: 'sidebar.message',
+  //     },
+  //     {
+  //       key: 'notification',
+  //       label: 'sidebar.notification',
+  //     },
+  //     {
+  //       key: 'popConfirm',
+  //       label: 'sidebar.popConfirm',
+  //     },
+  //     {
+  //       key: 'spin',
+  //       label: 'sidebar.spin',
+  //     },
+  //   ],
+  // },
   {
     key: 'table',
     label: 'sidebar.tables',
@@ -359,15 +359,15 @@ const options = [
       // }
     ],
   },
-  {
-    key: 'githubSearch',
-    label: 'sidebar.githubSearch',
-    leftIcon: 'ion-social-github',
-  },
-  {
-    key: 'blank_page',
-    label: 'sidebar.blankPage',
-    leftIcon: 'ion-document',
-  },
+  // {
+  //   key: 'githubSearch',
+  //   label: 'sidebar.githubSearch',
+  //   leftIcon: 'ion-social-github',
+  // },
+  // {
+  //   key: 'blank_page',
+  //   label: 'sidebar.blankPage',
+  //   leftIcon: 'ion-document',
+  // },
 ];
 export default options;

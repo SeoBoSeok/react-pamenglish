@@ -5,7 +5,8 @@ import useWindowSize from '@pam/lib/hooks/useWindowSize';
 import appActions from '@pam/redux/app/actions';
 // import ThemeSwitcher from '@pam/containers/ThemeSwitcher/ThemeSwitcher';
 import siteConfig from '@pam/config/site.config';
-import Sidebar from '../Sidebar/Sidebar';
+// import Sidebar from '../Sidebar/Sidebar';
+import DashSidebar from '../Sidebar/DashSidebar';
 import Topbar from '../Topbar/Topbar';
 import DashboardRoutes from './DashboardRoutes';
 
@@ -36,13 +37,15 @@ export default function Dashboard() {
   React.useEffect(() => {
     dispatch(toggleAll(width, height));
   }, [width, height, dispatch]);
+  console.log('Dashbaord Route Page');
   return (
     <DashboardContainer>
       <DashboardGlobalStyles />
       <Layout style={{ height: height }}>
         <Topbar />
         <Layout style={styles.layout}>
-          <Sidebar />
+          {/* <Sidebar /> */}
+          <DashSidebar />
           <Layout
             className="isoContentMainLayout"
             style={{
