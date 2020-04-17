@@ -112,7 +112,7 @@ export default function Sidebar() {
       >
         <Logo collapsed={isCollapsed} />
         <DashSidebarInfo />
-        <Scrollbars style={{ height: height - 70 }}>
+        <Scrollbars style={{ height: height - 220 }}>
           <Menu
             onClick={handleClick}
             theme="dark"

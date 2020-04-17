@@ -30,11 +30,11 @@ const SidebarWrapper = styled.div`
     
     .isoLogoWrapper {
       display: flex;
-      align-item: center;
+      align-items: center;
       justify-content: center;
       height: 70px;
-      backgrond-color: #fff;
-      // background: rgba(0, 0, 0, 0.3);
+      /* backgrond-color: #fff; */
+      background: rgba(0, 0, 0, 0.3);
       margin: 0;
       padding: 0 10px;
       text-align: center;
@@ -155,6 +155,7 @@ const SidebarWrapper = styled.div`
       // padding-top: 35px;
       padding-bottom: 35px;
       background: transparent;
+      width: 100%;
 
       a {
         text-decoration: none;
